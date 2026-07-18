@@ -1,0 +1,1016 @@
+=== SYSTEM INSTRUCTIONS ===
+
+You are an elite career strategist, CV editor, and application writer. Your job is to create application materials that are specific, credible, and effective.
+
+Prioritize accuracy over sounding impressive. Do not invent experience, employers, credentials, dates, projects, degrees, publications, tools, or achievements. If the available source material does not support a claim, do not include it.
+
+Use the candidate's existing CVs and website as the source of truth. You may reorganize, rewrite, compress, expand, and emphasize content, but you must not fabricate facts.
+
+Write in a natural, human, conversational style. Avoid common AI sounding language, corporate filler, and melodramatic phrasing. Do not use words or phrases such as delve, tapestry, testament, robust, navigate, foster, landscape, symphony, cutting edge, passionate about, thrilled to apply, uniquely positioned, dynamic, leverage, or fast paced environment unless they appear in the job post and are genuinely necessary.
+
+Use varied sentence lengths and sentence structures. Avoid perfectly balanced, predictable pacing. Favor active voice, concrete detail, and direct language.
+
+Do not flatter the company. Do not overstate enthusiasm. Do not apologize. Do not include generic claims that could apply to any applicant.
+
+Do not use the character "-" in the motivation letter. Avoid em dashes, en dashes, and hyphen based separators.
+
+Confidence and factuality:
+1. Use only facts supported by the CVs, website, or job post.
+2. If something is unclear, make the strongest reasonable choice without inventing facts.
+3. Do not mention uncertainty inside the final motivation letter unless absolutely necessary.
+4. Do not include citations in the final CV or motivation letter.
+5. Before finalizing, check that the output contains no invented claims.
+
+=== USER REQUEST ===
+
+Candidate website:
+https://francesco-cavina.netlify.app/
+
+Company:
+Optiver
+
+Role:
+Global Market Data (Working Student)
+
+Job posting URL:
+https://www.optiver.com/join-us/jobs/technology/amsterdam/global-market-data-working-student/?gh_src=9fb491cd2
+
+Relevant extracted job posting content:
+The Global Market Data (GMD) team is responsible for the data that underpins Optiver’s trading: exchange feeds, reference data, corporate actions, vendor analytics, and the contracts and metadata that sit behind them. We work directly with traders, quants, and engineers to make sure the right data is available, accurate, and well understood — and we are increasingly using AI to scale how we operate.
+Who we are
+Optiver is a tech-driven trading firm and leading global market maker. As one of the oldest market making institutions, we are a trusted partner of 70+ exchanges across the globe. Our mission is to constantly improve the market by injecting liquidity, providing accurate pricing, increasing transparency and acting as a stabilising force no matter the market conditions.
+Our Amsterdam office is where it all began. Since our founding in 1986, Optiver’s Amsterdam office has developed into one of the most dynamic trading floors in Europe, where teams trade a wide range of products from listed derivatives to cash equities, ETFs, bonds and foreign exchange.
+We are hiring two working students in Amsterdam to join GMD for 12 months. You will work on real operational problems alongside the team, applying AI tooling to scale how we manage market data and contributing directly to projects the trading floor relies on.
+What you’ll do
+Your work will span three areas. All of them make active use of the team’s AI tooling, and all of them produce output that goes into production.
+Run and improve AI-driven market data operation - Take ownership of day-to-day operational workflows; contract renewals, entitlements, dataset onboardings and make them faster and more reliable using the team’s AI tooling. Identify the next workflow worth automating and help build it.
+Operationalise vendor and exchange notification - Vendors and exchanges send a constant stream of notifications: feed migrations, format changes, fee updates, regulatory items. You’ll help build out the process that captures, classifies, and routes them — with AI doing the first pass and you ensuring the right things get to the right people.
+Build the team’s data knowledge base - A modern data function depends on rich, accurate metadata: who owns what, where it comes from, how it’s shaped, who’s using it. You’ll use AI to draft and structure this information at scale, work with vendors to close information gaps, and validate the output before it lands in the systems traders rely on.
+What you’ll gain
+
+Hands-on experience applying AI in production — prompting, validation, agentic workflows, human-in-the-loop review, and a clear sense of where LLMs add value and where they don’t
+Direct exposure to a top-tier trading firm — you’ll sit alongside traders, quants, and engineers and see how a trading business actually operates
+Concrete output you can point to — improved processes, structured datasets, and AI-driven workflows that remain in use after you leave
+A grounding in the market data industry — exchanges, vendors, contracts, licensing, and how data drives decision-making in financial markets
+
+Who you are
+
+Currently studying Finance, Economics, or a related field, with a technical streak — you are comfortable scripting and willing to learn new tools quickly
+Familiar with AI tools (LLM-based assistants, agents) through study or personal projects, and curious about how to use them well
+Strong attention to detail and able to work independently on structured tasks
+Clear written and verbal communication in English
+Genuinely interested in the intersection of markets, data, and AI
+
+Prior finance experience and a computer science background are not required. We value curiosity and a willingness to go deep on the domain.
+What you’ll get
+
+The chance to work alongside best-in-class professionals from over 40 different countries
+
+Competitive working student compensation
+
+Daily breakfast and lunch, fully paid commuting expenses, and weekly in-house chair massages
+
+Training, mentorship and personal development opportunities
+
+Regular social events, clubs and Friday afternoon drinks
+
+Practical details
+
+Hours: approximately 16–24 hours per week, flexible around your study schedule
+
+Location: Amsterdam office, in-person
+
+Duration: 12 months
+
+Start date: as soon as possible; applications reviewed on a rolling basis
+
+Candidate CV materials:
+--- CV File: CV Fastned.pdf ---
+Francesco Cavina 
+f.cavi2002@gmail.com | LinkedIn | Website | Amsterdam, Netherlands 
+QuanAtaAve student with a BSc in Econometrics and Data Science from Vrije Universiteit Amsterdam and incoming MSc studies in Econometrics and OperaAons 
+Research and Business AnalyAcs. Experience building forecasAng workflows, data pipelines, dashboards, model evaluaAon processes and self service data tools. 
+Strong fit for business case and network analysis work that requires structured assumpAons, clear models, and pracAcal decision support. 
+TECHNICAL AND ANALYTICAL SKILLS 
+ 
+•Quan:ta:ve analysis: econometrics, probability, staAsAcs, opAmisaAon, forecasAng, model evaluaAon, walk forward validaAon   
+•Programming and data: Python, SQL, PySpark, data ingesAon, automated workflows, schema inference, data quality workflows   
+•Decision support: dashboards, performance visualisaAon, assumpAon tesAng, translaAng model output into pracAcal recommendaAons   
+•Engineering tools: Git, Docker, FastAPI, Azure, Databricks, Airflow, Kubernetes, Terraform   
+•Product and communica:on: self service tooling, documentaAon, user focused prototypes, technical explanaAon 
+RELEVANT EXPERIENCE 
+ 
+Data & AI Platform Engineer 
+Robodata September 2025 - June 2026  
+Amsterdam, Netherlands 
+•Built privacy aware AI and data plaZorm components for enterprise clients, including metadata driven ingesAon, schema inference and PII 
+classificaAon workflows.   
+•Developed automated data pipelines in Python, PySpark and SQL using Bronze, Silver and Gold architecture.   
+•Worked on data structures and interfaces that made internal datasets easier to query, understand and reuse.   
+•Built local LLM workflows for data discovery, field classificaAon and metadata generaAon.   
+•Created self service data tooling so non specialist users could understand and operate technical data infrastructure more independently.   
+•Documented plaZorm components, workflows and design choices to support handover, adopAon and future development.   
+•Used Docker, Kubernetes, Terraform, Azure, Databricks, Airflow and SQLAlchemy across producAon plaZorm work. 
+Te a c h i n g Assistant - Student Assistant - Student Ambassador 
+Vrije Universiteit Amsterdam June 2022 - November 2024
+ 
+Amsterdam, Netherlands 
+•Taught weekly Probability Theory tutorials to first year Econometrics students. 
+•Explained abstract mathemaAcal concepts in a clear and pracAcal way, with focus on reasoning rather than memorising procedures. 
+•Helped students understand the assumpAons behind probability exercises and build confidence with formal problem solving. 
+•Built a student porZolio system with pracAcal tools and info for first year students and represented the EOR program during Open Days. 
+Operational Trader 
+QuantFi October 2022 - May 2023
+ 
+Amsterdam, Netherlands 
+•Developed and tested Python based forecasAng and trading strategies using Random Forest, XGBoost, neural networks and walk forward 
+validaAon.   
+•Built data ingesAon, retraining and daily forecast workflows in Python and SQL to support recurring trading decisions.   
+•Created dashboards and visualisaAons to compare model signals, realised performance and forecast quality.   
+•Evaluated model output with a^enAon to overfi_ng, changing market condiAons, assumpAons and pracAcal usability.   
+•Worked in an environment where clarity, disciplined analysis and Amely decision making ma^ered daily.   
+EDUCATION 
+ 
+ 
+Bachelor of Science in Econometrics and Data Science 
+Vrije Universiteit Amsterdam • Amsterdam, Netherlands • 2021-2024 • 7.8/10 • 
+Thesis: Nonstandard ProbabiliAes in an Internal Probability Space, grade 8.5/10
+Minor in Pure Mathema:cs 
+University of Leeds • Leeds, England 
+• 2024 • 8.5/10
+MSc in Econometrics and Opera:ons Research 
+Track Business Engineering and Data Driven Decision Making  
+• Vrije Universiteit Amsterdam • Amsterdam, Netherlands • 2026-2029
+MSc in Business Analy:cs 
+Track ComputaAonal Intelligence • Vrije Universiteit Amsterdam  
+• Amsterdam, Netherlands • 2026-2029
+
+PROJECTS
+ 
+1)AI Powered Personal Website • h^ps://github.com/FrancescoCavina02/My-Website • November 2025 - present 
+- Next.js, TypeScript, FastAPI, Python, Tailwind CSS 
+Built a full-stack porZolio with a FastAPI backend that parses an Obsidian vault into structured API endpoints for notes, quotes and chat 
+funcAonality. Designed it as a self-service knowledge interface, combining content modelling, backend automaAon, frontend usability and LLM-
+based interacAon. 
+2) RAG Knowledge Chatbot • h^ps://github.com/FrancescoCavina02/Spiritual-chatbot • November 2025 - present 
+ - Python, FastAPI, ChromaDB, sentence transformers, LLM APIs 
+ Built a retrieval-augmented chatbot using semanAc chunking, vector search, structured prompts and citaAon-based responses. Focused on   
+ reliable retrieval, traceable answers, hallucinaAon reducAon and reusable workflow design. Designed the system around the core problem of   
+ making a knowledge base queryable by an LLM while preserving source grounding. 
+ 
+3) Dodgeball Club Amsterdam • h^ps://github.com/FrancescoCavina02/DCA-website • June 2025 - present 
+ - HTML, CSS, JavaScript 
+ Built and maintain a public website focused on clear navigaAon, pracAcal usability and simple content management for club members. 
+Podcasts 
+Podcast Link - Created two independent interview podcasts with researchers in physics, cosmology, mathemaAcs, and philosophy. Prepared 
+technical topics, structured long form conversaAons, and edited material for clarity and pacing.
+
+--- CV File: CV Francesco Cavina.pdf ---
+Francesco Cavina 
+f.cavi2002@gmail.com | LinkedIn | Website | Amsterdam, Netherlands 
+Data and AI engineer with a BSc in Econometrics and Data Science from VU Amsterdam and incoming MSc studies in Econometrics and OperaJons Research and 
+Business AnalyJcs. ProducJon experience building data pipelines, local LLM infrastructure, AI ready data interfaces and full stack prototypes. Strong fit for roles 
+that turn analyJcal models into pracJcal soPware for operaJonal decision making. 
+TECHNICAL SKILLS 
+ 
+•Languages: Python, TypeScript, JavaScript, SQL 
+•AI and Data: LLMs, RAG, ChromaDB, OpenAI API, Hugging Face, scikit learn, PySpark 
+•Web and Product: FastAPI, Next.js, React, Tailwind CSS, REST APIs, UI components 
+•Infrastructure: Git, Docker, Kubernetes, Terraform, Azure, Databricks, Airflow 
+•Relevant Interests: data driven products, dashboarding, UX/UI, Gen AI tools, operaJonal modelling 
+EXPERIENCE 
+ 
+Data & AI Platform Engineer 
+Robodata September 2025 - June 2026
+, 
+Amsterdam, 
+Netherlands 
+•Built privacy aware AI and data pla`orm components for enterprise clients, including metadata driven ingesJon, schema inference and PII 
+classificaJon workflows. 
+•Developed automated data pipelines in Python, PySpark and SQL using Bronze, Silver and Gold architecture. 
+•Built local LLM workflows for data discovery, field classificaJon and metadata generaJon. 
+•Created AI ready data interfaces that allow governed datasets to be queried safely by LLM agents. 
+•Worked on self service data tooling, making technical data infrastructure easier for users to understand and operate. 
+•Used Docker, Kubernetes, Terraform, Azure, Airflow and SQLAlchemy across producJon pla`orm work. 
+Operational Trader 
+QuantFi October 2022 - May 2023
+, 
+Amsterdam, 
+Netherlands 
+•Developed and tested ML based trading strategies in Python using Random Forest, XGBoost, neural networks and walk forward validaJon. 
+•Built data ingesJon, retraining and daily forecast workflows using Python and SQL. 
+•Created performance dashboards and visualisaJons to evaluate model output and support daily decisions. 
+Te a c h i n g Assistant 
+Vrije Universiteit Amsterdam June 2022 - November 2024
+, 
+Amsterdam, 
+Netherlands 
+•Taught weekly Probability Theory tutorials to first year Econometrics students. 
+•Explained abstract mathemaJcal concepts in a clear and pracJcal way. 
+•Built a student por`olio system for first year students and represented the programme during Open Days. 
+EDUCATION 
+ 
+ 
+ 
+Bachelor of Science in Econometrics and Data Science 
+Vrije Universiteit Amsterdam • Amsterdam, Netherlands • 2021-2024 • 7.8/10 • 
+Thesis: Nonstandard ProbabiliJes in an Internal Probability Space, grade 8.5/10
+Minor in Pure MathemaXcs 
+University of Leeds  
+• Leeds, England • 2024 • 8.5/10
+MSc in Econometrics and OperaXons Research 
+Track Business Engineering and Data Driven Decision Making • Vrije Universiteit Amsterdam 
+• Amsterdam, Netherlands • 2026-2029
+MSc in Business AnalyXcs 
+Track ComputaJonal Intelligence • Vrije Universiteit Amsterdam  
+• Amsterdam, Netherlands • 2026-2029
+
+PROJECTS
+ 
+1)AI Powered Personal Website • hkps://github.com/FrancescoCavina02/My-Website • November 2025 - present 
+Built a full stack por`olio with a FastAPI backend that parses an Obsidian vault into a REST API for notes, quotes and chat funcJonality. Used 
+Next.js, TypeScript, Python and Tailwind CSS. 
+2) RAG Knowledge Chatbot • hkps://github.com/FrancescoCavina02/Spiritual-chatbot • November 2025 - present 
+ Built a retrieval augmented chatbot using semanJc chunking, vector search, structured prompts and citaJon based responses. Used Python,   
+ FastAPI, ChromaDB, sentence transformers and LLM APIs. 
+ 
+3) Dodgeball Club Amsterdam • hkps://github.com/FrancescoCavina02/DCA-website • June 2025 - present 
+ Built and maintain a public website using HTML, CSS and JavaScript. Focused on clear navigaJon, simple content management and pracJcal   
+ usability for club members. 
+Podcasts 
+Podcast Link - Created two independent interview podcasts with researchers in physics, cosmology, mathemaJcs and philosophy.
+
+--- CV File: CV Gaide.pdf ---
+Francesco Cavina 
+f.cavi2002@gmail.com | LinkedIn | Website | Amsterdam, Netherlands 
+Data and AI engineer with a BSc in Econometrics and Data Science from Vrije Universiteit Amsterdam and incoming MSc studies in Econometrics and OperaKons 
+Research and Business AnalyKcs. Experience building LLM workflows, RAG prototypes, governed data interfaces, Python data pipelines, APIs and full stack tools. 
+Strong fit for student AI agent engineering work that turns pracKcal workflow problems into agents, integraKons, automaKons and usable internal tools. 
+TECHNICAL SKILLS 
+ 
+•AI and LLM Engineering: LLM workflows, RAG, vector search, ChromaDB, OpenAI API, Hugging Face, sentence transformers, prompt design, 
+structured prompts, local LLM workflows, citaKon based responses   
+•Backend and Data: Python, FastAPI, SQL, PySpark, REST APIs, SQLAlchemy, data ingesKon, schema inference, metadata driven workflows, data 
+quality workflows   
+•Frontend and Product: TypeScript, JavaScript, Next.js, React, Tailwind CSS, HTML, CSS, UI components, user focused prototypes, self service 
+tools   
+•Infrastructure: Git, Docker, Kubernetes, Terraform, Azure, Databricks, Airflow   
+•QuanBtaBve Work: econometrics, probability, staKsKcs, forecasKng, model evaluaKon, walk forward validaKon, opKmisaKon, machine learning 
+with scikit learn, Random Forest, XGBoost and neural networks   
+RELEVANT EXPERIENCE 
+ 
+Data & AI Platform Engineer 
+Robodata September 2025 - June 2026
+, 
+Amsterdam, 
+Netherlands 
+•Built privacy aware AI and data pla^orm components for enterprise clients, including metadata driven ingesKon, schema inference and PII 
+classificaKon workflows.   
+•Developed automated data pipelines in Python, PySpark and SQL using Bronze, Silver and Gold architecture.   
+•Built local LLM workflows for data discovery, field classificaKon and metadata generaKon, with a_enKon to governed use of enterprise data.   
+•Created AI ready data interfaces that allowed internal datasets to be queried more safely and consistently by LLM based tools and agents.   
+•Worked on self service data tooling so non specialist users could understand, operate and reuse technical data infrastructure.   
+•Documented pla^orm components, workflows and design choices to support handover, adopKon and future development.   
+•Used Docker, Kubernetes, Terraform, Azure, Databricks, Airflow and SQLAlchemy across producKon pla^orm work. 
+Operational Trader 
+QuantFi October 2022 - May 2023
+, 
+Amsterdam, 
+Netherlands 
+•Developed and tested Python based forecasKng and trading strategies using Random Forest, XGBoost, neural networks and walk forward 
+validaKon.   
+•Built data ingesKon, retraining and daily forecast workflows in Python and SQL to support recurring trading decisions.   
+•Created dashboards and visualisaKons to compare model signals, realised performance and forecast quality.   
+•Evaluated model output with a_enKon to overfi`ng, changing market condiKons, assumpKons and pracKcal usability.   
+•Worked in an environment where clarity, disciplined analysis and Kmely decision making ma_ered daily.  
+Te a c h i n g Assistant 
+Vrije Universiteit Amsterdam June 2022 - November 2024
+, 
+Amsterdam, 
+Netherlands 
+•Taught weekly Probability Theory tutorials to first year Econometrics students.   
+•Explained abstract mathemaKcal concepts in a clear and pracKcal way, with focus on reasoning rather than memorising procedures.   
+•Helped students understand the assumpKons behind probability exercises and build confidence with formal problem solving.   
+•Built a student por^olio system with pracKcal tools and informaKon for first year students and represented the EOR programme during Open 
+Days.   
+EDUCATION 
+ 
+MSc in Econometrics and OperaBons Research 
+Track Business Engineering and Data Driven Decision Making  
+• Vrije Universiteit Amsterdam • Amsterdam, Netherlands • 2026-2029
+MSc in Business AnalyBcs 
+Track ComputaKonal Intelligence • Vrije Universiteit Amsterdam  
+• Amsterdam, Netherlands • 2026-2029
+
+ 
+PROJECTS
+ 
+1)AI Powered Personal Website • h_ps://github.com/FrancescoCavina02/My-Website • November 2025 - present 
+Built a full stack por^olio with a FastAPI backend that parses an Obsidian vault into a REST API for notes, quotes and chat funcKonality. Used 
+Next.js, TypeScript, Python and Tailwind CSS. 
+2) RAG Knowledge Chatbot • h_ps://github.com/FrancescoCavina02/Spiritual-chatbot • November 2025 - present 
+ Built a retrieval augmented chatbot using semanKc chunking, vector search, structured prompts and citaKon based responses. Focused on   
+ reliable retrieval, traceable answers, hallucinaKon reducKon and reusable workflow design. Designed the system around the problem of making 
+ a knowledge base queryable by an LLM while preserving source grounding.   
+ 
+3) Dodgeball Club Amsterdam • h_ps://github.com/FrancescoCavina02/DCA-website • June 2025 - present 
+ Built and maintain a public website using HTML, CSS and JavaScript. Focused on clear navigaKon, simple content management and pracKcal   
+ usability for club members. 
+Podcasts 
+Podcast Link - Created two independent interview podcasts with researchers in physics, cosmology, mathemaKcs and philosophy. 
+RELEVANT FIT FOR GAIDE 
+ 
+•PracKcal experience building LLM and data pla^orm components, not only experimenKng with AI tools.   
+•Comfortable working across AI engineering, backend APIs, data workflows, lightweight frontend work and documentaKon.   
+•Experience translaKng unclear workflows into usable prototypes and self service tools.   
+•Strong quanKtaKve foundaKon for evaluaKng models, assumpKons and pracKcal output quality.   
+•Able to explain technical ideas clearly to students and non specialist users.
+Bachelor of Science in Econometrics and Data Science 
+Vrije Universiteit Amsterdam • Amsterdam, Netherlands • 2021-2024 • 7.8/10 • 
+Thesis: Nonstandard ProbabiliKes in an Internal Probability Space, grade 8.5/10
+Minor in Pure MathemaBcs 
+University of Leeds • Leeds, England 
+• 2024 • 8.5/10
+
+--- CV File: CV IMC trading.pdf ---
+Francesco Cavina 
+f.cavi2002@gmail.com | LinkedIn | Website | Amsterdam, Netherlands 
+QuanAtaAve student in Econometrics and Data Science with Python experience across trading research, data pipelines, forecasAng workflows and internal tools. 
+Previous operaAonal trading experience at QuantFi, including ML based strategy tesAng, walk forward validaAon, dashboards and daily forecast workflows. Strong 
+fit for trader assistant roles that require analyAcal judgement, pracAcal coding and close collaboraAon with traders and engineers. 
+TECHNICAL SKILLS 
+ 
+•Programming: Python, SQL, TypeScript, JavaScript 
+•Quan<ta<ve work: forecasAng, model evaluaAon, walk forward validaAon, probability, staAsAcs, opAmisaAon, econometrics 
+•Data and trading tools: data ingesAon, dashboards, performance visualisaAon, automated retraining workflows, REST APIs 
+•Machine learning: Random Forest, XGBoost, neural networks, scikit learn, PySpark 
+•Engineering: Git, Docker, FastAPI, Azure, Databricks, Airflow, Kubernetes, Terraform 
+•Product work: internal tools, self service data interfaces, UI components, dashboarding 
+RELEVANT EXPERIENCE 
+ 
+Data & AI Platform Engineer 
+Robodata September 2025 - June 2026
+, 
+Amsterdam, 
+Netherlands 
+•Built Python, PySpark and SQL pipelines using Bronze, Silver and Gold data architecture. 
+•Developed metadata driven ingesAon, schema inference and PII classificaAon workflows for enterprise data plaZorms. 
+•Created local LLM workflows for data discovery, field classificaAon and metadata generaAon. 
+•Built AI ready data interfaces that allowed governed datasets to be queried safely and consistently. 
+•Worked on self service tooling that made technical data infrastructure easier for users to understand and operate. 
+•Used Docker, Kubernetes, Terraform, Azure, Databricks, Airflow and SQLAlchemy in producAon plaZorm work. 
+Operational Trader 
+QuantFi October 2022 - May 2023
+, 
+Amsterdam, 
+Netherlands 
+•Developed and tested Python based trading strategies using Random Forest, XGBoost, neural networks and walk forward validaAon. 
+•Built data ingesAon, retraining and daily forecast workflows in Python and SQL to support recurring trading decisions. 
+•Created dashboards and visualisaAons to compare model signals, realised performance and forecast quality. 
+•Evaluated model output with a\enAon to overfi]ng, changing market condiAons and pracAcal usability. 
+•Worked in an environment where speed, clarity and disciplined decision making ma\ered daily. 
+Te a c h i n g Assistant 
+Vrije Universiteit Amsterdam June 2022 - November 2024
+, 
+Amsterdam, 
+Netherlands 
+•Taught weekly Probability Theory tutorials to first year Econometrics students. 
+•Explained probability, mathemaAcal reasoning and problem solving techniques in a clear pracAcal way. 
+•Helped students move from memorising methods to understanding the assumpAons behind a soluAon. 
+•Built a student porZolio system for first year students and represented the programme during Open Days. 
+EDUCATION 
+ 
+ 
+ 
+Bachelor of Science in Econometrics and Data Science 
+Vrije Universiteit Amsterdam • Amsterdam, Netherlands • 2021-2024 • 7.8/10 • 
+Thesis: Nonstandard ProbabiliAes in an Internal Probability Space, grade 8.5/10
+Minor in Pure Mathema<cs 
+University of Leeds • Leeds, England 
+• 2024 • 8.5/10
+MSc in Econometrics and Opera<ons Research 
+Track Business Engineering and Data Driven Decision Making • Vrije Universiteit Amsterdam 
+• Amsterdam, Netherlands • 2026-2029
+MSc in Business Analy<cs 
+Track ComputaAonal Intelligence • Vrije Universiteit Amsterdam  
+• Amsterdam, Netherlands • 2026-2029
+
+PROJECTS
+ 
+1)AI Powered Personal Website • h\ps://github.com/FrancescoCavina02/My-Website • November 2025 - present 
+Built a full stack porZolio with a FastAPI backend that parses an Obsidian vault into a REST API for notes, quotes and chat funcAonality. Used 
+Next.js, TypeScript, Python and Tailwind CSS. 
+2) RAG Knowledge Chatbot • h\ps://github.com/FrancescoCavina02/Spiritual-chatbot • November 2025 - present 
+ Built a retrieval augmented chatbot using semanAc chunking, vector search, structured prompts and citaAon based responses. Used Python,   
+ FastAPI, ChromaDB, sentence transformers and LLM APIs. 
+ 
+3) Dodgeball Club Amsterdam • h\ps://github.com/FrancescoCavina02/DCA-website • June 2025 - present 
+ Built and maintain a public website using HTML, CSS and JavaScript. Focused on clear navigaAon, simple content management and pracAcal   
+ usability for club members. 
+Podcasts 
+Podcast Link - Created two independent interview podcasts with researchers in physics, cosmology, mathemaAcs and philosophy.
+
+--- CV File: CV NIBC.pdf ---
+Francesco Cavina 
+f.cavi2002@gmail.com | LinkedIn | Website | Amsterdam, Netherlands 
+Data and AI engineer with a BSc in Econometrics and Data Science from VU Amsterdam and incoming MSc studies in Econometrics and OperaJons Research and 
+Business AnalyJcs. Experience building privacy aware AI workflows, governed data interfaces, automated pipelines and full stack prototypes. Strong interest in 
+agenJc automaJon, internal process improvement and pracJcal AI tools that help teams reduce repeJJve work and make beOer operaJonal decisions. 
+TECHNICAL SKILLS 
+ 
+•AI and Automa:on: LLM workflows, RAG, agenJc workflows, OpenAI API, Hugging Face, ChromaDB, prompt design, AI assisted data discovery, 
+process automaJon concepts 
+•Data Engineering: Python, SQL, PySpark, Databricks, Airflow, metadata driven ingesJon, schema inference, data quality workflows 
+•Low Code and Product Thinking: Power Automate basics, Copilot Studio interest, workflow design, documentaJon, user focused prototypes, 
+internal tooling 
+•Web and APIs: FastAPI, Next.js, React, TypeScript, JavaScript, REST APIs, Tailwind CSS 
+•Infrastructure: Git, Docker, Kubernetes, Terraform, Azure 
+EXPERIENCE 
+ 
+Data & AI Platform Engineer 
+Robodata September 2025 - June 2026
+, 
+Amsterdam, 
+Netherlands 
+•Built privacy aware AI and data pla]orm components for enterprise clients, including metadata driven ingesJon, schema inference and PII 
+classificaJon workflows. 
+•Developed automated data pipelines in Python, PySpark and SQL using Bronze, Silver and Gold architecture. 
+•Built local LLM workflows for data discovery, field classificaJon and metadata generaJon, with emphasis on governed use of enterprise data. 
+•Created AI ready data interfaces that allow internal datasets to be queried safely by LLM based agents. 
+•Worked on self service data tooling so non specialist users could understand, operate and reuse technical data infrastructure. 
+•Documented pla]orm components, workflows and design choices to support handover, adopJon and future scaling. 
+•Used Docker, Kubernetes, Terraform, Azure, Airflow and SQLAlchemy across producJon pla]orm work. 
+Operational Trader 
+QuantFi October 2022 - May 2023
+, 
+Amsterdam, 
+Netherlands 
+•Developed and tested ML based trading strategies in Python using Random Forest, XGBoost, neural networks and walk forward validaJon. 
+•Built data ingesJon, retraining and daily forecast workflows using Python and SQL. 
+•Created performance dashboards and visualisaJons to evaluate model output and support daily decisions. 
+Te a c h i n g Assistant 
+Vrije Universiteit Amsterdam June 2022 - November 2024
+, 
+Amsterdam, 
+Netherlands 
+•Taught weekly Probability Theory tutorials to first year Econometrics students. 
+•Explained abstract mathemaJcal concepts in a clear and pracJcal way. 
+•Built a student por]olio system for first year students and represented the programme during Open Days. 
+EDUCATION 
+ 
+ 
+ 
+Bachelor of Science in Econometrics and Data Science 
+Vrije Universiteit Amsterdam • Amsterdam, Netherlands • 2021-2024 • 7.8/10 • 
+Thesis: Nonstandard ProbabiliJes in an Internal Probability Space, grade 8.5/10
+Minor in Pure Mathema:cs 
+University of Leeds  
+• Leeds, England • 2024 • 8.5/10
+MSc in Econometrics and Opera:ons Research 
+Track Business Engineering and Data Driven Decision Making • Vrije Universiteit Amsterdam 
+• Amsterdam, Netherlands • 2026-2029
+MSc in Business Analy:cs 
+Track ComputaJonal Intelligence • Vrije Universiteit Amsterdam  
+• Amsterdam, Netherlands • 2026-2029
+
+PROJECTS
+ 
+Selected projects focused on AI workflows, automa8on, usable interfaces and data driven products. 
+1)AI Powered Personal Website • hOps://github.com/FrancescoCavina02/My-Website • November 2025 - present 
+Built a full stack por]olio with a FastAPI backend that parses an Obsidian vault into a structured REST API for notes, quotes and chat 
+funcJonality. Designed the project as a self service knowledge interface, combining backend automaJon, frontend usability and LLM based 
+interacJon. Used Next.js, TypeScript, Python and Tailwind CSS. 
+2) RAG Knowledge Chatbot • hOps://github.com/FrancescoCavina02/Spiritual-chatbot • November 2025 - present 
+ Built a retrieval augmented chatbot using semanJc chunking, vector search, structured prompts and citaJon based responses. Focused on   
+ reliable informaJon retrieval, traceable answers and reusable workflow design. Used Python, FastAPI, ChromaDB, sentence transformers and   
+ LLM APIs. 
+ 
+3) Dodgeball Club Amsterdam • hOps://github.com/FrancescoCavina02/DCA-website • June 2025 - present 
+ Built and maintain a public website using HTML, CSS and JavaScript. Focused on clear navigaJon, simple content management and pracJcal   
+ usability for club members. 
+Podcasts 
+Podcast Link - Created two independent interview podcasts with researchers in physics, cosmology, mathemaJcs and philosophy. 
+RELEVANT STRENGHTS 
+ 
+•PracJcal AI implementaJon, not just experimentaJon 
+•TranslaJng unclear workflows into technical prototypes 
+•Building governed data access for LLM based tools 
+•Explaining technical concepts clearly to non specialist users 
+•Comfortable working across data, backend, automaJon and user interface layers
+
+--- CV File: CV STX.pdf ---
+Francesco Cavina 
+f.cavi2002@gmail.com | LinkedIn | Website | Amsterdam, Netherlands 
+QuanAtaAve data and AI engineer with a BSc in Econometrics and Data Science from Vrije Universiteit Amsterdam and incoming MSc studies in Econometrics and 
+OperaAons Research and Business AnalyAcs. Experience in operaAonal trading, Python and SQL workflows, automated data pipelines, dashboards, model 
+evaluaAon and self service data tools. Strong fit for finance operaAons work that combines accurate data handling, cross team informaAon flows, process 
+improvement and pracAcal analysis in a trading environment. 
+TECHNICAL AND ANALYTICAL SKILLS 
+ 
+•Quan:ta:ve analysis: econometrics, probability, staAsAcs, opAmisaAon, forecasAng, model evaluaAon, walk forward validaAon   
+•Finance and opera:ons support: trading workflows, recurring forecasts, dashboarding, performance visualisaAon, assumpAon tesAng, 
+documentaAon   
+•Programming and data: Python, SQL, PySpark, data ingesAon, automated workflows, schema inference, data quality workflows 
+•Automa:on and AI tools: LLM workflows, RAG, ChromaDB, OpenAI API, Hugging Face, local LLM workflows, structured prompts    
+•Engineering tools: Git, Docker, FastAPI, Azure, Databricks, Airflow, Kubernetes, Terraform   
+•Communica:on: teaching, technical explanaAon, user focused prototypes, translaAng model output into pracAcal recommendaAons 
+RELEVANT EXPERIENCE 
+ 
+Data & AI Platform Engineer 
+Robodata September 2025 - June 2026
+, 
+Amsterdam, 
+Netherlands 
+•Developed automated Bronze, Silver and Gold data pipelines in Python, PySpark and SQL. 
+•Built metadata driven ingesAon, schema inference and PII classificaAon workflows for enterprise data pla\orms. 
+•Built local LLM workflows for data discovery, field classificaAon and metadata generaAon. 
+•Created self service tooling and data interfaces so non specialist users could query, understand and reuse internal datasets. 
+•Documented workflows, pla\orm components and design choices across Docker, Kubernetes, Terraform, Azure, Databricks, Airflow and 
+SQLAlchemy. 
+Operational Trader 
+QuantFi October 2022 - May 2023
+, 
+Amsterdam, 
+Netherlands 
+•Developed and tested Python based trading strategies using Random Forest, XGBoost, neural networks and walk forward validaAon. 
+•Built Python and SQL workflows for data ingesAon, retraining and daily forecasts used in recurring trading decisions. 
+•Created dashboards comparing model signals, realised performance and forecast quality. 
+•Evaluated outputs for overfi^ng, changing market condiAons and pracAcal trading use, in a se^ng where speed and disciplined decisions 
+ma_ered. 
+Te a c h i n g Assistant 
+Vrije Universiteit Amsterdam June 2022 - November 2024
+, 
+Amsterdam, 
+Netherlands 
+•Taught weekly Probability Theory tutorials to first year Econometrics students. 
+•Explained abstract mathemaAcal concepts clearly, with focus on reasoning, assumpAons and formal problem solving. 
+•Built a student por\olio system and represented the EOR programme during Open Days. 
+EDUCATION 
+ 
+ 
+ 
+Bachelor of Science in Econometrics and Data Science 
+Vrije Universiteit Amsterdam • Amsterdam, Netherlands • 2021-2024 • 7.8/10 • 
+Thesis: Nonstandard ProbabiliAes in an Internal Probability Space, grade 8.5/10
+Minor in Pure Mathema:cs 
+University of Leeds • Leeds, England 
+• 2024 • 8.5/10
+MSc in Econometrics and Opera:ons Research 
+Track Business Engineering and Data Driven Decision Making • Vrije Universiteit Amsterdam 
+• Amsterdam, Netherlands • 2026-2029
+MSc in Business Analy:cs 
+Track ComputaAonal Intelligence • Vrije Universiteit Amsterdam  
+• Amsterdam, Netherlands • 2026-2029
+
+PROJECTS
+ 
+1)AI Powered Personal Website • h_ps://github.com/FrancescoCavina02/My-Website • November 2025 - present 
+Next.js, TypeScript, FastAPI, Python, Tailwind CSS   
+Built a full stack por\olio with a FastAPI backend that parses an Obsidian vault into structured API endpoints for notes, quotes and chat 
+funcAonality. Designed it as a self service knowledge interface, combining content modelling, backend automaAon, frontend usability and LLM 
+based interacAon.   
+2) RAG Knowledge Chatbot • h_ps://github.com/FrancescoCavina02/Spiritual-chatbot • November 2025 - present 
+ Python, FastAPI, ChromaDB, sentence transformers, LLM APIs   
+ Built a retrieval augmented chatbot using semanAc chunking, vector search, structured prompts and citaAon based responses. Focused on   
+ reliable retrieval, traceable answers, hallucinaAon reducAon and reusable workflow design.  
+ 
+3) Dodgeball Club Amsterdam • h_ps://github.com/FrancescoCavina02/DCA-website • June 2025 - present 
+ Built and maintain a public website using HTML, CSS and JavaScript. Focused on clear navigaAon, simple content management and pracAcal   
+ usability for club members. 
+Podcasts 
+Podcast Link - Created two independent interview podcasts with researchers in physics, cosmology, mathemaAcs and philosophy.
+
+--- CV File: CV THEC.pdf ---
+Francesco Cavina 
+f.cavi2002@gmail.com | LinkedIn | Website | Amsterdam, Netherlands 
+Data & AI PlaBorm Engineer with a BSc in Econometrics and Data Science from VU Amsterdam and incoming MSc studies in Econometrics, OperaMons Research and 
+Business AnalyMcs. Experience building privacy-aware AI workflows, data pipelines, local LLM infrastructure, RAG prototypes and full-stack tools with Python, 
+FastAPI, TypeScript and cloud infrastructure. Interested in reliable LLM systems for adapMve learning, retrieval pipelines, content models and user-facing AI products. 
+TECHNICAL SKILLS 
+ 
+•AI / LLM Engineering: LLM workflows, RAG, vector search, ChromaDB, OpenAI API, Hugging Face, prompt design, structured outputs, citaMon-
+based generaMon, AI-assisted data discovery, hallucinaMon-aware evaluaMon 
+•Backend & APIs: Python, FastAPI, SQL, REST APIs, SQLAlchemy, data pipelines, metadata-driven ingesMon, schema inference, data quality 
+workflows 
+•Frontend & Product: TypeScript, JavaScript, Next.js, React, Tailwind CSS, UI components, self-service tools, user-facing prototypes, technical 
+demos 
+•Data & Infrastructure: PySpark, Databricks, Airflow, Docker, Kubernetes, Terraform, Azure, Git, CI/CD concepts 
+•Relevant Strengths: LLM-safe data access, modular plaBorm thinking, documentaMon, technical communicaMon, educaMonal explanaMon, 
+translaMng unclear workflows into working prototypes 
+RELEVANT EXPERIENCE 
+ 
+Data & AI Platform Engineer 
+Robodata September 2025 - June 2026
+, 
+Amsterdam, 
+Netherlands 
+•Built privacy-aware AI and data plaBorm components for enterprise clients, combining metadata-driven ingesMon, schema inference, PII 
+classificaMon and governed access to internal data. 
+•Developed automated Python, PySpark and SQL pipelines using Bronze/Silver/Gold architecture, with aaenMon to maintainability, data quality 
+and downstream AI readiness. 
+•Built local LLM workflows for data discovery, field classificaMon and metadata generaMon, helping transform raw enterprise datasets into 
+structured, AI-usable knowledge assets. 
+•Created AI-ready data interfaces that allowed governed datasets to be queried safely and consistently by LLM-based tools and agents. 
+•Worked on self-service data tooling so non-specialist users could understand, operate and reuse technical data infrastructure without depending 
+on engineers for every workflow. 
+•Documented plaBorm components, workflow logic and design choices to support handover, adopMon and future scaling. 
+•Used Docker, Kubernetes, Terraform, Azure, Databricks, Airflow and SQLAlchemy across producMon plaBorm work. 
+Operational Trader 
+QuantFi October 2022 - May 2023
+, 
+Amsterdam, 
+Netherlands 
+•Developed and tested Python based trading strategies using Random Forest, XGBoost, neural networks and walk forward validaMon. 
+•Built data ingesMon, retraining and daily forecast workflows in Python and SQL to support recurring trading decisions. 
+•Created dashboards and visualisaMons to compare model signals, realised performance and forecast quality. 
+•Evaluated model output with aaenMon to overficng, changing market condiMons and pracMcal usability. 
+•Worked in an environment where speed, clarity and disciplined decision making maaered daily. 
+Te a c h i n g Assistant 
+Vrije Universiteit Amsterdam June 2022 - November 2024
+, 
+Amsterdam, 
+Netherlands 
+•Taught weekly Probability Theory tutorials to first-year Econometrics students, translaMng abstract mathemaMcal concepts into clear, structured 
+explanaMons. 
+•Helped students move from memorising procedures to understanding assumpMons, reasoning steps and problem-solving strategies. 
+•Built a student porBolio system for first-year students, combining educaMonal support with pracMcal tooling. 
+•Represented the programme during Open Days, explaining the curriculum and student experience to prospecMve students. 
+EDUCATION 
+ 
+MSc in Econometrics and OperaYons Research 
+Track Business Engineering and Data Driven Decision Making • Vrije Universiteit Amsterdam 
+• Amsterdam, Netherlands • 2026-2029
+
+ 
+ 
+ 
+PROJECTS
+ 
+1)AI Powered Personal Website • haps://github.com/FrancescoCavina02/My-Website • November 2025 - present 
+Next.js, TypeScript, FastAPI, Python, Tailwind CSS 
+Built a full-stack porBolio with a FastAPI backend that parses an Obsidian vault into structured API endpoints for notes, quotes and chat 
+funcMonality. Designed it as a self-service knowledge interface, combining content modelling, backend automaMon, frontend usability and LLM-
+based interacMon. 
+2) RAG Knowledge Chatbot • haps://github.com/FrancescoCavina02/Spiritual-chatbot • November 2025 - present 
+ Python, FastAPI, ChromaDB, sentence transformers, LLM APIs 
+ Built a retrieval-augmented chatbot using semanMc chunking, vector search, structured prompts and citaMon-based responses. Focused on   
+ reliable retrieval, traceable answers, hallucinaMon reducMon and reusable workflow design. Designed the system around the core problem of   
+ making a knowledge base queryable by an LLM while preserving source grounding. 
+ 
+3) Dodgeball Club Amsterdam • haps://github.com/FrancescoCavina02/DCA-website • June 2025 - present 
+ HTML, CSS, JavaScript 
+ Built and maintain a public website focused on clear navigaMon, pracMcal usability and simple content management for club members. 
+Podcasts 
+Podcast Link - Created two independent interview podcasts with researchers in physics, cosmology, mathemaMcs and philosophy. 
+RELEVANT FIT FOR TECH 
+ 
+•PracMcal experience building LLM/data plaBorm components, not only experimenMng with AI tools. 
+•Strong overlap with RAG, AI-ready data interfaces, backend APIs, full-stack prototypes and cloud-naMve deployment. 
+•EducaMonal experience as a Probability Theory teaching assistant, with a strong interest in how complex knowledge can be structured, explained 
+and personalised. 
+•Comfortable working across AI engineering, sokware development, documentaMon and user-facing tooling. 
+Bachelor of Science in Econometrics and Data Science 
+Vrije Universiteit Amsterdam • Amsterdam, Netherlands • 2021-2024 • 7.8/10 • 
+Thesis: Nonstandard ProbabiliMes in an Internal Probability Space, grade 8.5/10
+Minor in Pure MathemaYcs 
+University of Leeds • Leeds, England 
+• 2024 • 8.5/10
+MSc in Business AnalyYcs 
+Track ComputaMonal Intelligence • Vrije Universiteit Amsterdam  
+• Amsterdam, Netherlands • 2026-2029
+
+--- CV File: CV VU.pdf ---
+Francesco Cavina 
+f.cavi2002@gmail.com | LinkedIn | Website | Amsterdam, Netherlands 
+Data and AI engineer with a BSc in Econometrics and Data Science from VU Amsterdam and incoming MSc studies at VU. Experience building privacy aware AI 
+workflows, RAG systems, governed data interfaces, automated data pipelines, and full stack prototypes. Former VU teaching assistant with experience explaining 
+abstract concepts clearly to first year students. Strong fit for educaPonal technology work that combines pracPcal AI development, clear communicaPon, 
+responsible GenAI use, and support for online and blended educaPon. 
+TECHNICAL SKILLS 
+ 
+•AI and GenAI: LLM workflows, RAG, vector search, ChromaDB, OpenAI API, Hugging Face, sentence transformers, prompt design, citaPon based 
+answers, local LLM workflows 
+•Programming and data: Python, SQL, PySpark, TypeScript, JavaScript, data pipelines, metadata driven ingesPon, schema inference, data quality 
+workflows 
+•Web and product: FastAPI, Next.js, React, REST APIs, Tailwind CSS, user focused prototypes, documentaPon, self service tools 
+•Cloud and infrastructure: Azure, Docker, Kubernetes, Terraform, Airflow, Databricks, Git 
+•EducaConal and media work: Teaching support, tutorial delivery, slide structure, technical explanaPon, podcast producPon, interview 
+preparaPon, audio ediPng, research communicaPon 
+RELEVANT EXPERIENCE 
+ 
+Data & AI Platform Engineer 
+Robodata September 2025 - June 2026  
+Amsterdam, Netherlands 
+•Built privacy aware AI and data pla]orm components for enterprise clients, including metadata driven ingesPon, schema inference, and PII 
+classificaPon workflows. 
+•Developed automated data pipelines in Python, PySpark, and SQL using Bronze, Silver, and Gold architecture. 
+•Built local LLM workflows for data discovery, field classificaPon, and metadata generaPon, with a^enPon to safe and governed use of internal 
+data. 
+•Created AI ready data interfaces that allowed internal datasets to be queried more safely by LLM based agents. 
+•Worked on self service data tooling so non specialist users could understand, operate, and reuse technical data infrastructure. 
+•Documented pla]orm components, workflows, and design choices to support handover, adopPon, and future development. 
+•Used Docker, Kubernetes, Terraform, Azure, Airflow, Databricks, and SQLAlchemy across producPon pla]orm work. 
+Te a c h i n g Assistant - Student Assistant - Student Ambassador 
+Vrije Universiteit Amsterdam June 2022 - November 2024
+ 
+Amsterdam, Netherlands 
+•Taught weekly Probability Theory tutorials to first year Econometrics students. 
+•Explained abstract mathemaPcal concepts in a clear and pracPcal way, with focus on reasoning rather than memorising procedures. 
+•Helped students understand the assumpPons behind probability exercises and build confidence with formal problem solving. 
+•Built a student por]olio system with pracPcal tools and info for first year students and represented the EOR program during Open Days. 
+Operational Trader 
+QuantFi October 2022 - May 2023
+ 
+Amsterdam, Netherlands 
+•Developed and tested Python based forecasPng workflows using machine learning models, including Random Forest, XGBoost, and neural 
+networks. 
+•Built data ingesPon, retraining, and daily forecast workflows in Python and SQL to support recurring operaPonal decisions. 
+•Created dashboards and visualisaPons to compare model output, forecast quality, and realised performance. 
+EDUCATION 
+ 
+ 
+MSc in Econometrics and OperaCons Research 
+Track Business Engineering and Data Driven Decision Making • Vrije Universiteit Amsterdam 
+• Amsterdam, Netherlands • 2026-2029
+MSc in Business AnalyCcs 
+Track ComputaPonal Intelligence • Vrije Universiteit Amsterdam  
+• Amsterdam, Netherlands • 2026-2029
+
+ 
+PROJECTS
+ 
+1)AI Powered Personal Website • h^ps://github.com/FrancescoCavina02/My-Website • November 2025 - present 
+- Next.js, TypeScript, FastAPI, Python, Tailwind CSS 
+Built a full-stack por]olio with a FastAPI backend that parses an Obsidian vault into structured API endpoints for notes, quotes and chat 
+funcPonality. Designed it as a self-service knowledge interface, combining content modelling, backend automaPon, frontend usability and LLM-
+based interacPon. 
+2) RAG Knowledge Chatbot • h^ps://github.com/FrancescoCavina02/Spiritual-chatbot • November 2025 - present 
+ - Python, FastAPI, ChromaDB, sentence transformers, LLM APIs 
+ Built a retrieval-augmented chatbot using semanPc chunking, vector search, structured prompts and citaPon-based responses. Focused on   
+ reliable retrieval, traceable answers, hallucinaPon reducPon and reusable workflow design. Designed the system around the core problem of   
+ making a knowledge base queryable by an LLM while preserving source grounding. 
+ 
+3) Dodgeball Club Amsterdam • h^ps://github.com/FrancescoCavina02/DCA-website • June 2025 - present 
+ - HTML, CSS, JavaScript 
+ Built and maintain a public website focused on clear navigaPon, pracPcal usability and simple content management for club members. 
+Podcasts 
+Podcast Link - Created two independent interview podcasts with researchers in physics, cosmology, mathemaPcs, and philosophy. Prepared 
+technical topics, structured long form conversaPons, and edited material for clarity and pacing. 
+RELEVANT STRENGTHS 
+ 
+•Building pracPcal AI tools rather than only experimenPng with models. 
+•TranslaPng unclear workflows into usable technical prototypes. 
+•Explaining technical and mathemaPcal concepts to students and non specialist users. 
+•Working across backend, data, AI, automaPon, and user interface layers. 
+•Thinking criPcally about privacy, data access, citaPons, and responsible GenAI use. 
+•Improving educaPonal material by making structure, pacing, and explanaPon clearer. 
+Bachelor of Science in Econometrics and Data Science 
+Vrije Universiteit Amsterdam • Amsterdam, Netherlands • 2021-2024 • 7.8/10 • 
+Thesis: Nonstandard ProbabiliPes in an Internal Probability Space, grade 8.5/10
+Minor in Pure MathemaCcs 
+University of Leeds • Leeds, England 
+• 2024 • 8.5/10
+
+--- CV File: CV Van Lanschot Kempen.pdf ---
+Francesco Cavina 
+f.cavi2002@gmail.com | LinkedIn | Website | Amsterdam, Netherlands 
+QuanAtaAve data and AI engineer with a BSc in Econometrics and Data Science from Vrije Universiteit Amsterdam and MSc studies in Econometrics and 
+OperaAons Research and Business AnalyAcs. Experience in operaAonal trading, Python and SQL workflows, forecasAng pipelines, dashboards, model evaluaAon, 
+data visualisaAon and AI ready data interfaces. Strong fit for Liquid Credit Desk work that combines market interest, quanAtaAve analysis, data tooling and 
+pracAcal decision support. 
+TECHNICAL AND ANALYTICAL SKILLS 
+ 
+•Quan:ta:ve analysis: econometrics, probability, staAsAcs, opAmisaAon, forecasAng, model evaluaAon, walk forward validaAon   
+•Programming and data: Python, SQL, PySpark, data ingesAon, automated workflows, schema inference, data quality workflows   
+•Data visualisa:on and decision support: dashboards, performance visualisaAon, model signal comparison, assumpAon tesAng, self service 
+tools   
+•AI and data tools: LLM workflows, RAG, ChromaDB, OpenAI API, Hugging Face, local LLM workflows, structured prompts   
+•Engineering tools: Git, Docker, FastAPI, Azure, Databricks, Airflow, Kubernetes, Terraform   
+•Communica:on: documentaAon, technical explanaAon, user focused prototypes, translaAng model output into pracAcal recommendaAons 
+RELEVANT EXPERIENCE 
+ 
+Operational Trader 
+QuantFi October 2022 - May 2023
+, 
+Amsterdam, 
+Netherlands 
+•Developed and tested Python based trading strategies using Random Forest, XGBoost, neural networks and walk forward validaAon. 
+•Built data ingesAon, retraining and daily forecast workflows in Python and SQL to support recurring trading decisions. 
+•Created dashboards and visualisaAons to compare model signals, realised performance and forecast quality. 
+•Evaluated model output with a]enAon to overfi^ng, changing market condiAons and pracAcal usability. 
+•Worked in an environment where speed, clarity and disciplined decision making ma]ered daily. 
+Data & AI Platform Engineer 
+Robodata September 2025 - June 2026
+, 
+Amsterdam, 
+Netherlands 
+•Built Python, PySpark and SQL pipelines using Bronze, Silver and Gold data architecture. 
+•Developed metadata driven ingesAon, schema inference and PII classificaAon workflows for enterprise data pla_orms. 
+•Created local LLM workflows for data discovery, field classificaAon and metadata generaAon. 
+•Built AI ready data interfaces that allowed governed datasets to be queried safely and consistently. 
+•Worked on self service tooling that made technical data infrastructure easier for users to understand and operate. 
+•Used Docker, Kubernetes, Terraform, Azure, Databricks, Airflow and SQLAlchemy in producAon pla_orm work. 
+Te a c h i n g Assistant 
+Vrije Universiteit Amsterdam June 2022 - November 2024
+, 
+Amsterdam, 
+Netherlands 
+•Taught weekly Probability Theory tutorials to first year Econometrics students.   
+•Explained abstract mathemaAcal concepts in a clear and pracAcal way, with focus on reasoning rather than memorising procedures.   
+•Helped students understand the assumpAons behind probability exercises and build confidence with formal problem solving.   
+•Built a student por_olio system with pracAcal tools and informaAon for first year students and represented the programme during Open Days. 
+EDUCATION 
+ 
+ 
+ 
+Bachelor of Science in Econometrics and Data Science 
+Vrije Universiteit Amsterdam • Amsterdam, Netherlands • 2021-2024 • 7.8/10 • 
+Thesis: Nonstandard ProbabiliAes in an Internal Probability Space, grade 8.5/10
+Minor in Pure Mathema:cs 
+University of Leeds • Leeds, England 
+• 2024 • 8.5/10
+MSc in Econometrics and Opera:ons Research 
+Track Business Engineering and Data Driven Decision Making • Vrije Universiteit Amsterdam 
+• Amsterdam, Netherlands • 2026-2029
+MSc in Business Analy:cs 
+Track ComputaAonal Intelligence • Vrije Universiteit Amsterdam  
+• Amsterdam, Netherlands • 2026-2029
+
+PROJECTS
+ 
+1)AI Powered Personal Website • h]ps://github.com/FrancescoCavina02/My-Website • November 2025 - present 
+Next.js, TypeScript, FastAPI, Python, Tailwind CSS   
+Built a full stack por_olio with a FastAPI backend that parses an Obsidian vault into structured API endpoints for notes, quotes and chat 
+funcAonality. Designed it as a self service knowledge interface, combining content modelling, backend automaAon, frontend usability and LLM 
+based interacAon.   
+2) RAG Knowledge Chatbot • h]ps://github.com/FrancescoCavina02/Spiritual-chatbot • November 2025 - present 
+ Python, FastAPI, ChromaDB, sentence transformers, LLM APIs   
+ Built a retrieval augmented chatbot using semanAc chunking, vector search, structured prompts and citaAon based responses. Focused on   
+ reliable retrieval, traceable answers, hallucinaAon reducAon and reusable workflow design.  
+ 
+3) Dodgeball Club Amsterdam • h]ps://github.com/FrancescoCavina02/DCA-website • June 2025 - present 
+ Built and maintain a public website using HTML, CSS and JavaScript. Focused on clear navigaAon, simple content management and pracAcal   
+ usability for club members. 
+Podcasts 
+Podcast Link - Created two independent interview podcasts with researchers in physics, cosmology, mathemaAcs and philosophy.
+
+Your tasks:
+
+Task 1: Create the motivation letter.
+
+Write a tailored motivation letter for this specific role and company, on behalf of a candidate seeking a working student position of 16 to 24 hours per week.
+
+Requirements:
+1. Natural, conversational tone.
+2. Specific to the company, role, and job post.
+3. Based on the candidate's real experience.
+4. No generic filler.
+5. No exaggerated enthusiasm.
+6. No unsupported claims.
+7. No dash characters.
+8. Suitable to send directly.
+9. Strong opening that gets to the point.
+10. Clear explanation of why the candidate fits the role.
+11. Clear explanation of what the candidate would contribute.
+12. Polished but not stiff.
+
+Working student engagement mention (required in every motivation letter):
+The candidate is applying for a working student position of 16 to 24 hours per week. You must state this clearly and concretely exactly once in the letter. Do not leave it implied.
+Place it strategically, not as a random aside. Choose the moment where it best serves the letter:
+- In the opening, if the letter needs to frame what kind of engagement the candidate is seeking before discussing fit.
+- When transitioning from motivation to contribution, if clarifying how the candidate would join the team in practice.
+- Alongside studies, timeline, or availability, especially when combined with the September 2026 MSc start.
+Do not bury it only in the closing or mention it without context. Integrate it into a sentence that makes the application request concrete. One clear mention is enough.
+
+Masters studies mention (required in every motivation letter):
+The candidate will start in September 2026 two MSc programmes at Vrije Universiteit Amsterdam: Econometrics and Operations Research, and Business Analytics. You must include this fact exactly once in the letter.
+Place it strategically, not as a random aside. Choose the moment where it best supports the letter's argument:
+- Early, only if the letter's opening needs to establish academic trajectory or student status before discussing fit.
+- When connecting quantitative, analytical, or data driven skills to the role, if the masters strengthen that link.
+- When discussing availability, timeline, or part time engagement, if the start date clarifies the candidate's situation.
+Do not drop it in the closing as filler. Integrate it into a sentence that advances why the candidate fits the role or what they would contribute. One concise mention is enough.
+
+Experience narrative tailoring (required):
+
+Before writing the letter, choose:
+1. The target job posting, company, and role and its main priority for this application.
+2. The 1 to 2 experiences or projects that best support that priority.
+
+In the letter:
+- Lead with the most relevant experience for this target, not always the most recent one.
+- For each experience mentioned, reframe it through this target's lens. Do not reuse the same paragraph structure or emphasis across different companies or roles.
+- Connect each cited experience to a concrete company need, product, domain problem, or role requirement from the job posting, company, and role.
+- Mention only the parts of each role that matter for this target. Omit accurate but weakly relevant details.
+- Vary which projects appear. Do not mention the same side projects in every letter unless they are clearly central to this target.
+- Never invent tools, outcomes, responsibilities, or scope.
+
+Anti-sameness check:
+Before finalizing, read the experience paragraphs aloud in your head as if the company name were removed. If they could be sent to another AI or data company with only the opening paragraph changed, rewrite them.
+
+Voice check (required for the letter):
+Tailoring must not make the letter sound templated, corporate, or AI generated.
+Keep the prose direct, varied, and conversational while applying the tailoring rules above.
+Use varied sentence lengths. Favor active voice, concrete detail, and plain language.
+Do not use common AI sounding words or phrases such as delve, tapestry, testament, robust, navigate, foster, landscape, symphony, cutting edge, passionate about, thrilled to apply, uniquely positioned, dynamic, leverage, or fast paced environment unless they appear in the job post and are genuinely necessary.
+Do not flatter the company. Do not overstate enthusiasm. Do not apologize.
+
+Task 2: Create the tailored CV.
+
+Reformat and rewrite the CV to improve fit for this job.
+
+Requirements:
+1. Preserve the general style, visual identity, fonts, and professional feel of the existing CVs as much as possible.
+2. You may reorder sections.
+3. You may emphasize the most relevant experience.
+4. You may remove or compress less relevant details.
+5. You may create a stronger profile or summary section if useful.
+6. You may adapt section titles.
+7. Do not invent facts.
+8. Keep the CV concise, relevant, and visually balanced.
+9. Make the CV feel intentionally tailored to the job post.
+
+Experience tailoring (required):
+
+Before writing the CV, identify in one sentence:
+1. The target job posting or company domain and what they care about most.
+2. The primary lens for this application (for example: research rigour, product engineering, data infrastructure, retrieval systems, evaluation discipline, teaching and communication).
+
+For each role in RELEVANT EXPERIENCE, choose one dominant angle for this target and rewrite the achievement lines to foreground that angle.
+The facts must stay the same. The emphasis, vocabulary, and ordering may change.
+
+Reframing rules:
+1. Do not copy achievement lines verbatim from source CVs if a different accurate framing would fit this target better.
+2. For each role, at least one achievement line must be materially reframed for this target when a justified alternative exists in the source material.
+3. Across roles, avoid repeating the same generic framing. Each role should highlight a different contribution type where possible.
+4. Prefer job posting or company domain language only when it truthfully matches the candidate's work.
+5. Remove achievements that are accurate but weakly relevant; promote stronger but still accurate angles from the same role.
+6. Within the combined section line budget below, select achievements that best match this target even if that means dropping strong but less relevant accomplishments from the source CV.
+7. Map at least 2 achievement lines in RELEVANT EXPERIENCE to concrete priorities from the job posting or company domain, using only supported facts from the source material.
+8. Never invent tools, outcomes, responsibilities, or scope.
+
+Examples of justified reframing from the same underlying fact:
+- Robodata for a vector DB company: emphasize governed dataset access, metadata generation, and AI ready interfaces.
+- Robodata for a consumer analytics company: emphasize pipeline reliability, schema inference, and turning messy data into decision ready structure.
+- QuantFi for an ML research lab: emphasize walk forward validation, overfitting control, and careful model evaluation.
+- QuantFi for a product analytics role: emphasize dashboards, recurring forecast workflows, and operational decision support.
+- VU teaching for a research group: emphasize explaining assumptions, formal reasoning, and communicating technical ideas clearly.
+- VU teaching for an edtech or internal tooling company: emphasize building practical student facing systems and structured explanation.
+
+Anti-sameness check:
+Before finalizing, verify that the RELEVANT EXPERIENCE section would not read as interchangeable with a CV for a very different company. If the same lines could fit any AI or data company with only the skills section changed, rewrite the experience section again.
+
+Projects and other sections:
+For SELECTED PROJECTS, full work history, and education, preserve source content more closely unless reframing clearly improves fit for this target.
+
+Technical skills section formatting:
+Do not use bullet points (no •, -, or * list markers) in this section.
+Format each skill category on its own line as: Category name: skill1, skill2, skill3
+Example: AI and data workflows: Python, SQL, PySpark, data ingestion, schema inference, data quality workflows
+
+Relevant experience section formatting:
+Do not use bullet points (no •, -, or * list markers) in this section.
+Use role headers (job title, employer, dates) followed by plain achievement lines without list markers.
+
+Section length and layout budget (required):
+
+The CV is formatted with 1.78 cm left and right margins. These three sections must fit together on the page without awkward gaps or overflow:
+1. Intro paragraph (profile or summary at the top of the CV)
+2. TECHNICAL SKILLS
+3. RELEVANT EXPERIENCE
+
+Combined line budget across these three sections:
+- Target: about 25 lines of text total
+- Maximum: 26 lines
+- Minimum: 23 to 24 lines. Do not use fewer than 23 lines, or the document layout will look underfilled and poorly balanced.
+
+Count only lines of body text within these three sections. Do not count section headers (such as TECHNICAL SKILLS or RELEVANT EXPERIENCE), job title headers, employer lines, or blank lines.
+
+Allocation is your judgment:
+- Decide how many lines to give the intro, how many skill category lines to include, and how many achievement lines to give each role in RELEVANT EXPERIENCE.
+- A role with stronger relevance to this target may deserve more achievement lines; a weaker one fewer.
+- If you are near the maximum, compress wording or drop lower priority items before exceeding 26 lines.
+- If you are below 23 lines, add the most relevant missing detail rather than padding with filler.
+
+If content would exceed the budget, prioritize the most job-relevant items and remove or compress the rest.
+
+Return exactly two final artifacts:
+
+ARTIFACT 1: TAILORED CV
+
+Provide the full tailored CV content.
+
+ARTIFACT 2: MOTIVATION LETTER
+
+Provide the full motivation letter.
+
+Also return a short internal generation report after the two artifacts with:
+1. Company name used for the filename.
+2. Role title detected.
+3. Source CV files used.
+4. Any skipped CV files and why.
+5. Any warnings about missing information.
+6. A checklist confirming that no unsupported claims were added.
+7. For each role in RELEVANT EXPERIENCE, the tailoring angle used for this target.
+8. Achievement lines that were reframed rather than copied verbatim from source CVs.
+9. The 1 to 2 experiences or projects foregrounded in the motivation letter and why.
+10. The narrative angle used for each experience paragraph in the motivation letter.

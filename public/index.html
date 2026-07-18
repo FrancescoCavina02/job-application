@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Application Automator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+</head>
+<body>
+<div class="app-layout">
+
+  <header>
+    <div class="logo">&#128196;</div>
+    <h1>Job Application Automator</h1>
+    <span class="subtitle">Generates tailored CVs and motivation letters via LLM</span>
+  </header>
+
+  <main>
+
+    <!-- Mode tabs -->
+    <div class="tab-bar">
+      <button class="tab-btn active" id="tab-job">Job Posting</button>
+      <button class="tab-btn" id="tab-interest">Working Student Interest</button>
+    </div>
+
+    <!-- Job posting input -->
+    <div class="card" id="panel-job">
+      <h2>Job Posting URL</h2>
+      <div class="input-group">
+        <input
+          type="url"
+          id="url-input"
+          placeholder="https://jobs.example.com/senior-engineer-123"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button id="generate-btn">Generate application materials</button>
+        <button id="create-prompt-btn" class="btn-ghost">Create Prompt</button>
+      </div>
+      <div class="status-bar" id="status-bar" style="margin-top: 12px;">
+        <span class="status-dot" id="status-dot"></span>
+        <span id="status-text">Ready</span>
+      </div>
+    </div>
+
+    <!-- Working student interest input -->
+    <div class="card hidden" id="panel-interest">
+      <h2>Company Website URL</h2>
+      <p style="font-size: 13px; color: var(--text-muted); margin: 0 0 12px;">
+        Paste the general website of a company you want to approach for a working student position (16–24h/week). The system will research what the company does and generate a tailored CV and interest letter.
+      </p>
+      <div class="input-group">
+        <input
+          type="url"
+          id="interest-url-input"
+          placeholder="https://company.com"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button id="interest-generate-btn">Generate interest application</button>
+        <button id="create-interest-prompt-btn" class="btn-ghost">Create Prompt</button>
+      </div>
+      <div class="status-bar" id="interest-status-bar" style="margin-top: 12px;">
+        <span class="status-dot" id="interest-status-dot"></span>
+        <span id="interest-status-text">Ready</span>
+      </div>
+    </div>
+
+    <!-- Error banner (hidden until error) -->
+    <div class="error-banner hidden" id="error-banner"></div>
+
+    <!-- Prompt output card (hidden until Create Prompt is used) -->
+    <div class="card hidden" id="prompt-card">
+      <div class="prompt-card-header">
+        <div>
+          <h2>Prompt for ChatGPT-5.6 Sol</h2>
+          <p class="prompt-card-note">Copy this entire prompt and paste it directly into <strong>chatgpt.com</strong>. The model will navigate any URLs embedded in the text and execute the tasks.</p>
+        </div>
+        <div class="prompt-card-actions">
+          <span class="prompt-char-count" id="prompt-char-count"></span>
+          <button id="copy-prompt-btn" class="btn-copy">📋 Copy to clipboard</button>
+        </div>
+      </div>
+      <textarea id="prompt-textarea" class="prompt-textarea" readonly spellcheck="false"></textarea>
+      <div class="prompt-saved-path" id="prompt-saved-path"></div>
+    </div>
+
+    <!-- Parsed info card (shared, title updated per mode) -->
+    <div class="card hidden" id="parsed-card">
+      <h2 id="parsed-card-title">Parsed Job Info</h2>
+      <div class="meta-grid">
+        <div class="meta-item">
+          <div class="label">Company</div>
+          <div class="value" id="meta-company">—</div>
+        </div>
+        <div class="meta-item" id="meta-role-item">
+          <div class="label">Role</div>
+          <div class="value" id="meta-role">—</div>
+        </div>
+        <div class="meta-item" id="meta-location-item">
+          <div class="label">Location</div>
+          <div class="value" id="meta-location">—</div>
+        </div>
+        <div class="meta-item" id="meta-remote-item">
+          <div class="label">Remote / Hybrid</div>
+          <div class="value" id="meta-remote">—</div>
+        </div>
+        <div class="meta-item" id="meta-seniority-item">
+          <div class="label">Seniority</div>
+          <div class="value" id="meta-seniority">—</div>
+        </div>
+      </div>
+      <div style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">Extracted content preview</div>
+      <div class="excerpt-box" id="excerpt-box"></div>
+    </div>
+
+    <!-- Contact email card (hidden until interest results) -->
+    <div class="card hidden" id="contact-email-card">
+      <h2>Contact Email</h2>
+      <div id="contact-email-content"></div>
+    </div>
+
+    <!-- Warnings (hidden until there are some) -->
+    <div class="card hidden" id="warnings-card">
+      <h2>Warnings</h2>
+      <div class="warnings-list" id="warnings-list"></div>
+    </div>
+
+    <!-- Output files (hidden until done) -->
+    <div class="card hidden" id="results-card">
+      <h2>Generated Files</h2>
+      <div id="file-results"></div>
+    </div>
+
+    <!-- Generation report (hidden until done) -->
+    <div class="card hidden" id="report-card">
+      <h2>Generation Report</h2>
+      <div class="report-box" id="report-box"></div>
+    </div>
+
+  </main>
+
+  <aside>
+
+    <!-- CV files -->
+    <div>
+      <div class="aside-title">CV Source Files</div>
+      <div id="cv-files-list">
+        <div style="font-size: 12px; color: var(--text-muted);">Loading...</div>
+      </div>
+    </div>
+
+    <!-- History -->
+    <div>
+      <div class="aside-title" style="display:flex;justify-content:space-between;align-items:center;">
+        <span>Recent Runs</span>
+        <button
+          id="refresh-history-btn"
+          style="background:none;color:var(--accent);font-size:11px;padding:2px 6px;border-radius:4px;font-weight:500;"
+          title="Refresh history"
+        >Refresh</button>
+      </div>
+      <div id="history-list">
+        <div style="font-size: 12px; color: var(--text-muted);">No runs yet.</div>
+      </div>
+    </div>
+
+  </aside>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
