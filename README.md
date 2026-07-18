@@ -41,17 +41,9 @@ OPENAI_API_KEY=sk-...
 LLM_MODEL=gpt-4o
 ```
 
-**4. Add your CV files**
+**4. Embed your CV source**
 
-Place your existing CV files inside the `CVs/` folder:
-
-```
-CVs/
-  Francesco_Cavina_CV.pdf
-  Francesco_Cavina_CV.docx
-```
-
-Supported formats: **PDF**, **DOCX**, **TXT**, **Markdown**.
+The application uses an embedded canonical LaTeX CV source within `src/services/llmProvider.ts` to ensure layout consistency. The legacy `./CVs` directory and parsing of PDF/DOCX files are no longer used for active generation.
 
 ---
 
@@ -73,29 +65,40 @@ npm run dev
 
 ## Usage
 
+The tool operates in two main modes (Job Posting application and Spontaneous Company Interest application) and offers both fully automatic LLM generation and manual copy-paste prompt generation.
+
+### Job Posting Mode (Specific Role)
 1. Open the app at `http://localhost:3000`
 2. Paste a job posting URL into the input field
-3. Click **Generate application materials**
-4. The system will:
-   - Fetch the job posting page
-   - Extract and parse the main content
-   - Read your CV files from `./CVs`
-   - Send everything to the configured LLM
-   - Save two output files to the output directory
-5. The generated files will be shown in the results panel
+3. Select an action:
+   - **Generate application materials**: Fetches/crawls the job page, extracts description/metadata, constructs the LLM prompt, calls the LLM to write a tailored LaTeX CV and a matching LaTeX motivation letter, and writes them to the output directory.
+   - **Create prompt**: Fetches/crawls the job page, parses content, and outputs the complete system + user prompt to a text file in `output/prompts/`. You can copy-paste this prompt into ChatGPT 5.6 Sol (or other web interfaces) for manual generation.
+
+### Company Interest Mode (Spontaneous Working Student)
+1. Open the app at `http://localhost:3000`
+2. Paste the company's main website URL
+3. Select an action:
+   - **Generate application materials**: Crawls multiple company pages to identify the domain/business case and extract contact emails, builds the spontaneous interest prompt, runs the LLM, and writes a tailored LaTeX CV and matching interest letter to the output directory.
+   - **Create prompt**: Crawls the company site, identifies contact emails, structures the spontaneous application instructions, and saves the complete prompt to `output/prompts/` for manual copy-pasting.
 
 ---
 
 ## Output files
 
-Files are saved to the directory configured by `OUTPUT_DIR` (defaults to the current working directory):
+Generated files are saved to the directory configured by `OUTPUT_DIR` (defaults to the current working directory):
 
-```
-CV_[Company_Name].md
-Motivation-letter_[Company_Name].md
-```
+- **LaTeX Outputs** (saved as `.md` files containing raw, compilable LaTeX):
+  ```
+  CV_[Company_Name].md
+  Motivation-letter_[Company_Name].md
+  ```
+- **Copy-Pasteable Prompts**:
+  Saved to the `prompts` subfolder within the output directory (e.g. `output/prompts/`):
+  ```
+  output/prompts/[Company_Name]_prompt_[Timestamp].txt
+  ```
 
-If a file with that name already exists, a timestamp is appended to avoid overwriting.
+If an output file already exists, a timestamp is appended to prevent overwriting.
 
 ---
 
@@ -110,8 +113,8 @@ All settings are controlled via environment variables (see `.env.example`):
 | `ANTHROPIC_API_KEY` | — | Your Anthropic API key |
 | `LLM_MODEL` | `gpt-4o` | Model name (e.g. `gpt-4o`, `o3`, `claude-opus-4-5`) |
 | `LLM_REASONING_EFFORT` | `medium` | For OpenAI o-series models: `low`, `medium`, `high` |
-| `OUTPUT_DIR` | `.` | Where to save generated files |
-| `CV_DIR` | `./CVs` | Where to read CV source files from |
+| `OUTPUT_DIR` | `.` | Where to save generated files and prompts |
+| `CV_DIR` | `./CVs` | (Legacy/Deprecated) CV directory path |
 | `CANDIDATE_WEBSITE` | `https://francesco-cavina.netlify.app/` | Your website, included in the LLM prompt |
 | `PORT` | `3000` | Local server port |
 
@@ -159,8 +162,8 @@ job-application/
     services/
       jobFetcher.ts       Fetch job posting HTML
       jobParser.ts        Extract and parse content
-      cvLoader.ts         Parse CV files
-      llmProvider.ts      LLM provider abstraction
+      cvLoader.ts         (Legacy/Unused) Parse CV files
+      llmProvider.ts      LLM provider abstraction (contains embedded LaTeX source CV)
       outputWriter.ts     Save output files
     db/database.ts        SQLite persistence
     utils/
@@ -170,7 +173,9 @@ job-application/
     index.html            Frontend UI
     style.css
     app.js
-  CVs/                    Place your CV files here
+  output/                 Output files directory
+    prompts/              Generated prompt text files saved here
+  CVs/                    (Legacy) CV files directory
   data/                   SQLite database (auto-created)
   .env.example            Config template
 ```
