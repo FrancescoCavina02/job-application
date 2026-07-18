@@ -9,6 +9,7 @@ import { createProvider, buildPrompt, buildInterestPrompt } from '../services/ll
 import { parseLLMResponse, saveOutputFiles } from '../services/outputWriter.js';
 import { insertApplication, getAllApplications } from '../db/database.js';
 import { logger } from '../utils/logger.js';
+import { postProcessGeneratedPrompt } from '../services/promptPostProcessor.js';
 
 // ---------------------------------------------------------------------------
 // Helper: merge system + user prompts into a single copy-pasteable string
@@ -307,7 +308,26 @@ router.post('/create-prompt', async (req: Request, res: Response) => {
       candidateWebsite: config.candidateWebsite,
     });
 
-    const promptText = mergePromptText(systemPrompt, userPrompt);
+    const rawPromptText = mergePromptText(systemPrompt, userPrompt);
+
+    // Step 4: Enrich the prompt, copy it to the clipboard, and optionally open ChatGPT.
+    const postProcessed = await postProcessGeneratedPrompt(rawPromptText, parsedJob.structured.company, {
+      automationEnabled: config.promptAutomationEnabled,
+      chatGptUrl: config.chatGptUrl,
+      chatGptModelName: config.chatGptModelName,
+    });
+    warnings.push(...postProcessed.warnings);
+    const promptText = postProcessed.promptText;
+
+    if (!postProcessed.clipboard.success || !postProcessed.browserAutomation.success) {
+      logger.warn('Prompt post-processing did not complete fully; prompt returned in response for manual use.', {
+        clipboard: postProcessed.clipboard.message,
+        browserAutomation: postProcessed.browserAutomation.message,
+      });
+      console.log('\n=== GENERATED PROMPT READY FOR MANUAL COPY/PASTE ===\n');
+      console.log(promptText);
+      console.log('\n=== END GENERATED PROMPT ===\n');
+    }
 
     // Step 5: Save prompt file to output/prompts/
     const company = parsedJob.structured.company ?? 'Unknown_Company';
@@ -323,6 +343,9 @@ router.post('/create-prompt', async (req: Request, res: Response) => {
       promptText,
       savedPath,
       charCount: promptText.length,
+      companyWebsite: postProcessed.companyWebsite,
+      clipboard: postProcessed.clipboard,
+      browserAutomation: postProcessed.browserAutomation,
       warnings,
     });
   } catch (err) {
@@ -368,7 +391,26 @@ router.post('/create-interest-prompt', async (req: Request, res: Response) => {
       candidateWebsite: config.candidateWebsite,
     });
 
-    const promptText = mergePromptText(systemPrompt, userPrompt);
+    const rawPromptText = mergePromptText(systemPrompt, userPrompt);
+
+    // Step 4: Enrich the prompt, copy it to the clipboard, and optionally open ChatGPT.
+    const postProcessed = await postProcessGeneratedPrompt(rawPromptText, parsedCompany.structured.company, {
+      automationEnabled: config.promptAutomationEnabled,
+      chatGptUrl: config.chatGptUrl,
+      chatGptModelName: config.chatGptModelName,
+    });
+    warnings.push(...postProcessed.warnings);
+    const promptText = postProcessed.promptText;
+
+    if (!postProcessed.clipboard.success || !postProcessed.browserAutomation.success) {
+      logger.warn('Prompt post-processing did not complete fully; prompt returned in response for manual use.', {
+        clipboard: postProcessed.clipboard.message,
+        browserAutomation: postProcessed.browserAutomation.message,
+      });
+      console.log('\n=== GENERATED PROMPT READY FOR MANUAL COPY/PASTE ===\n');
+      console.log(promptText);
+      console.log('\n=== END GENERATED PROMPT ===\n');
+    }
 
     // Step 5: Save prompt file to output/prompts/
     const company = parsedCompany.structured.company ?? 'Unknown_Company';
@@ -383,6 +425,9 @@ router.post('/create-interest-prompt', async (req: Request, res: Response) => {
       promptText,
       savedPath,
       charCount: promptText.length,
+      companyWebsite: postProcessed.companyWebsite,
+      clipboard: postProcessed.clipboard,
+      browserAutomation: postProcessed.browserAutomation,
       pagesCrawled: 1 + crawlResult.extraPages.length,
       warnings,
     });

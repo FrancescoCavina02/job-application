@@ -117,6 +117,38 @@ All settings are controlled via environment variables (see `.env.example`):
 | `CV_DIR` | `./CVs` | (Legacy/Deprecated) CV directory path |
 | `CANDIDATE_WEBSITE` | `https://francesco-cavina.netlify.app/` | Your website, included in the LLM prompt |
 | `PORT` | `3000` | Local server port |
+| `PROMPT_AUTOMATION_ENABLED` | `true` | Set to `false` to skip the ChatGPT browser handoff after prompt creation |
+| `CHATGPT_URL` | `https://chatgpt.com/` | ChatGPT URL opened by prompt browser automation |
+| `CHATGPT_MODEL_NAME` | `GPT 5.6 SOL high` | Visible ChatGPT model label selected by prompt browser automation |
+
+
+### Prompt post-processing and ChatGPT handoff
+
+When you click **Create prompt**, the server now post-processes the generated prompt before saving it:
+
+1. It performs a quick web lookup for the parsed company name and adds the most general official homepage beside the `Company:` value, for example `Company Name — https://company.com`. If no reliable homepage is found, the company line is left unchanged and a warning is returned.
+2. It copies the final prompt to the macOS clipboard with `pbcopy`.
+3. If enabled, it opens `chatgpt.com` in a normal Playwright-controlled Chromium window, attempts to enable ChatGPT temporary chat mode, selects `GPT 5.6 SOL high`, and pastes the prompt into the message box without sending it.
+
+Configure the handoff with these environment variables:
+
+| Variable | Default | Description |
+|---|---|---|
+| `PROMPT_AUTOMATION_ENABLED` | `true` | Set to `false` to skip the browser handoff. The prompt homepage lookup and clipboard copy still run. |
+| `CHATGPT_URL` | `https://chatgpt.com/` | ChatGPT URL to open. |
+| `CHATGPT_MODEL_NAME` | `GPT 5.6 SOL high` | Visible model-picker label to select. |
+
+Setup notes:
+
+- Clipboard copying requires macOS and the system `pbcopy` command. On non-macOS systems the prompt is still saved, returned by the API, and printed to the server console with a clear manual-copy message.
+- Browser handoff uses Playwright Chromium. Install it with:
+
+  ```bash
+  npx playwright install chromium
+  ```
+
+- Run the app from a graphical macOS session, not a headless SSH session. You may need to grant Terminal, iTerm, VS Code, or your Node runtime macOS Accessibility/Automation permissions in **System Settings → Privacy & Security**.
+- Log in to ChatGPT in the opened Playwright browser profile if prompted. ChatGPT UI labels can change; if automation cannot find the temporary-chat toggle, model picker, or message box, it fails safely after the prompt is already copied or printed.
 
 ### Switching providers
 
