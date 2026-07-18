@@ -117,6 +117,35 @@ All settings are controlled via environment variables (see `.env.example`):
 | `CV_DIR` | `./CVs` | (Legacy/Deprecated) CV directory path |
 | `CANDIDATE_WEBSITE` | `https://francesco-cavina.netlify.app/` | Your website, included in the LLM prompt |
 | `PORT` | `3000` | Local server port |
+| `PROMPT_AUTOMATION_ENABLED` | `true` | Set to `false` to skip the ChatGPT browser handoff after prompt creation |
+| `CHATGPT_URL` | `https://chatgpt.com/` | ChatGPT URL opened by prompt browser automation |
+| `CHATGPT_MODEL_NAME` | `GPT 5.6 SOL high` | Visible ChatGPT model label selected by prompt browser automation |
+| `PROMPT_AUTOMATION_BROWSER_BUNDLE_ID` | `ai.perplexity.comet` | macOS app bundle ID opened for ChatGPT handoff; defaults to Perplexity Comet |
+
+
+### Prompt post-processing and ChatGPT handoff
+
+When you click **Create prompt**, the server now post-processes the generated prompt before saving it:
+
+1. It performs a quick web lookup for the parsed company name and adds the most general official homepage beside the `Company:` value, for example `Company Name — https://company.com`. If no reliable homepage is found, the company line is left unchanged and a warning is returned.
+2. It copies the final prompt to the macOS clipboard with `pbcopy`.
+3. If enabled, it opens `chatgpt.com` in your installed Perplexity Comet browser using `open -b ai.perplexity.comet "https://chatgpt.com"` with an `open -a Comet <url>` fallback. It then uses AppleScript/System Events keystrokes to attempt to enable ChatGPT temporary chat mode, select `GPT 5.6 SOL high`, paste the prompt from the clipboard, and submit it.
+
+Configure the handoff with these environment variables:
+
+| Variable | Default | Description |
+|---|---|---|
+| `PROMPT_AUTOMATION_ENABLED` | `true` | Set to `false` to skip the browser handoff. The prompt homepage lookup and clipboard copy still run. |
+| `CHATGPT_URL` | `https://chatgpt.com/` | ChatGPT URL to open. |
+| `CHATGPT_MODEL_NAME` | `GPT 5.6 SOL high` | Visible model-picker label to select. |
+| `PROMPT_AUTOMATION_BROWSER_BUNDLE_ID` | `ai.perplexity.comet` | macOS browser bundle ID passed to `open -b`; the fallback remains `open -a Comet`. |
+
+Setup notes:
+
+- Clipboard copying requires macOS and the system `pbcopy` command. On non-macOS systems the prompt is still saved, returned by the API, and printed to the server console with a clear manual-copy message.
+- Browser handoff requires Perplexity Comet to be installed on macOS. The default bundle ID is `ai.perplexity.comet`; if your installation differs, set `PROMPT_AUTOMATION_BROWSER_BUNDLE_ID`.
+- Run the app from a graphical macOS session, not a headless SSH session. Grant Terminal, iTerm, VS Code, or your Node runtime macOS Accessibility/Automation permissions in **System Settings → Privacy & Security** so AppleScript/System Events can send keystrokes to Comet.
+- Keep your ChatGPT Plus account logged in inside Comet before running the handoff. ChatGPT UI labels and shortcuts can change; if automation cannot enable temporary chat, find the model picker, or submit, it fails safely after opening Comet with the prompt already on the clipboard.
 
 ### Switching providers
 

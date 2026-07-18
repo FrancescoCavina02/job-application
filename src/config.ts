@@ -22,6 +22,10 @@ export interface Config {
   ignoreSslErrors: boolean;
   projectRoot: string;
   dbPath: string;
+  promptAutomationEnabled: boolean;
+  chatGptUrl: string;
+  chatGptModelName: string;
+  browserBundleId: string;
 }
 
 function resolveDir(envValue: string | undefined, defaultRelative: string): string {
@@ -48,6 +52,10 @@ function loadConfig(): Config {
     ignoreSslErrors: process.env['IGNORE_SSL_ERRORS'] === 'true',
     projectRoot,
     dbPath: path.join(projectRoot, 'data', 'applications.db'),
+    promptAutomationEnabled: process.env['PROMPT_AUTOMATION_ENABLED'] !== 'false',
+    chatGptUrl: process.env['CHATGPT_URL'] ?? 'https://chatgpt.com/',
+    chatGptModelName: process.env['CHATGPT_MODEL_NAME'] ?? 'GPT 5.6 SOL high',
+    browserBundleId: process.env['PROMPT_AUTOMATION_BROWSER_BUNDLE_ID'] ?? 'ai.perplexity.comet',
   };
 }
 
